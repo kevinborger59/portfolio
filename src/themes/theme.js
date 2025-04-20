@@ -69,7 +69,7 @@ const baseTheme = {
         {
           props: { variant: 'logoFirst' },
           style: ({ theme }) => ({
-            color: theme.palette.secondary.main
+            color: theme.palette.secondary.dark
           })
         },
         {
@@ -93,55 +93,56 @@ const baseTheme = {
 };
 
 const lightTheme = createTheme({
-  ...baseTheme,
-  palette: {
-    mode: 'light',
-    primary: {
-      light: '#8B5CF6', // Violet tendance
-      main: '#A78BFA',
-      dark: '#7C3AED',
+    ...baseTheme,
+    palette: {
+      mode: 'light',
+      primary: {
+        light: '#D6E4FF',
+        main: '#9DB2D9',
+        dark: '#6C83B5',
+      },
+      secondary: {
+        light: '#FBEFF4',
+        main: '#F4A9C4',
+        dark: '#B83265',
+      },
+      background: {
+        default: '#F9FAFB',
+        paper: '#FFFFFF',
+        hero: 'linear-gradient(135deg, #D8E3F2 0%, #AFCBFF 100%)', // Nouveau gradient : bleu lavande
+        section: '#F3F4F6',
+        button: '#D8E3F2'
+      },
+      text: {
+        primary: '#1E1E1E',
+        secondary: '#4B5563',
+      },
     },
-    secondary: {
-      main: '#9e07b6', // Rose tendance
-      light: '#F472B6',
-      dark: '#DB2777',
-    },
-    background: {
-      default: '#F9FAFB',
-      paper: '#FFFFFF',
-      hero: 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)', // Gradient violet-rose
-      section: '#F3F4F6',
-    },
-    text: {
-      primary: '#111827',
-      secondary: '#4B5563',
-    },
-  },
-});
+  });
 
 const darkTheme = createTheme({
   ...baseTheme,
   palette: {
     mode: 'dark',
     primary: {
-      main: '#A78BFA',
-      light: '#C4B5FD',
-      dark: '#8B5CF6',
+      main: '#9DB2D9',
+      light: '#C4D3F2',
+      dark: '#6C83B5',
     },
     secondary: {
-      main: '#F472B6',
-      light: '#F9A8D4',
-      dark: '#EC4899',
+      main: '#F4A9C4',
+      light: '#FBEFF4',
+      dark: '#B83265',
     },
     background: {
-      default: '#111827',
-      paper: '#1F2937',
-      hero: 'linear-gradient(135deg, #6D28D9 0%, #BE185D 100%)', // Gradient violet-rose plus sombre
-      section: '#1F2937',
+      default: '#0F172A',
+      paper: '#1E293B',
+      hero: 'linear-gradient(135deg, #384375 0%, #7A3E65 100%)', // Violet-gris vers rose foncé
+      section: '#1C2433',
     },
     text: {
-      primary: '#F9FAFB',
-      secondary: '#D1D5DB',
+      primary: '#F3F4F6',
+      secondary: '#CBD5E1'
     },
   },
 });

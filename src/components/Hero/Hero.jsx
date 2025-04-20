@@ -2,10 +2,14 @@ import React from 'react';
 import { Box, Container, Typography, Button, Grid, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
   const { t } = useTranslation();
   const theme = useTheme();
+
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
 
   return (
     <Box
@@ -25,9 +29,9 @@ const Hero = () => {
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
               <motion.div
-                  initial={{ opacity: 0, x: -120 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  ref={ref1}
+                  animate={inView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
+                  transition={{ duration: 0.6 }}
                 >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
                   <Box
@@ -94,9 +98,9 @@ const Hero = () => {
 
             <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'block' } }}>
               <motion.div
-                initial={{ opacity: 0, x: 200 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                ref={ref2}
+                animate={inView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+                transition={{ duration: 0.6 }}
               >
                 <Box
                   component="img"

@@ -29,77 +29,56 @@ const CV = () => {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.6 }}
               >
                 <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                  <WorkIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
-                  <Typography variant="h4">{t('cv.experience')}</Typography>
-                </Box>
-                <Divider sx={{ mb: 4 }} />
-                
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.seniorBackEnd')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>Blissim</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Sept 2023 - {t('cv.present')}</Typography>
-                    <Typography sx={{ mx: 2 }}>•</Typography>
-                    <Typography variant="subtitle1">Paris, France · {t('cv.hybrid')}</Typography>
-                  </Box>
-                  <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-                    {t('cv.skills.backendDev')}, WordPress, {t('cv.skills.restApi')}, Symfony, PHP
-                  </Typography>
-                </Box>
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.webDev')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>ATECNA</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Apr 2021 - Aug 2023</Typography>
-                  </Box>
-                  <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-                    PHP, Symfony, Back-end, Elasticsearch, RabbitMQ
-                  </Typography>
-                </Box>
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.leadArchitect')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>SupplyGroup</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Jun 2020 - Apr 2021</Typography>
-                    <Typography sx={{ mx: 2 }}>•</Typography>
-                    <Typography variant="subtitle1">Lomme, France · Hybrid</Typography>
-                  </Box>
-                </Box>
+  <WorkIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
+  <Typography variant="h4">{t('cv.experience')}</Typography>
+</Box>
+<Divider sx={{ mb: 4 }} />
 
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.leadBackend')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>Axecibles</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Jan 2019 - Jun 2020</Typography>
-                    <Typography sx={{ mx: 2 }}>•</Typography>
-                    <Typography variant="subtitle1">Marcq-en-Baroeul, France · Hybrid</Typography>
-                  </Box>
-                </Box>
+<Box sx={{ mb: 5 }}>
+  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webProjectManagement')}</Typography>
+  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+    • {t('cv.skills.corporateWebsite')}<br />
+    • {t('cv.skills.ecommerce')}<br />
+    • {t('cv.skills.mobileApps')}<br />
+    • {t('cv.skills.restApi')}<br />
+    • WordPress, Symfony, PHP
+  </Typography>
+</Box>
 
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.fullstackLead')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>DATAXPLORER</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Dec 2016 - Jan 2019</Typography>
-                    <Typography sx={{ mx: 2 }}>•</Typography>
-                    <Typography variant="subtitle1">Tourcoing, France · On-site</Typography>
-                  </Box>
-                </Box>
+<Box sx={{ mb: 5 }}>
+  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.technicalArchitecture')}</Typography>
+  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+    • {t('cv.skills.backendArchitecture')}<br />
+    • Elasticsearch, RabbitMQ<br />
+    • {t('cv.skills.apiDesign')}<br />
+    • {t('cv.skills.databaseOptimization')}
+  </Typography>
+</Box>
 
-                <Box sx={{ mb: 5 }}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.juniorDev')}</Typography>
-                  <Typography variant="h6" sx={{ mb: 2 }}>Imagine Web Online</Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, color: 'text.secondary' }}>
-                    <Typography variant="subtitle1">Jul 2013 - Dec 2015</Typography>
-                    <Typography sx={{ mx: 2 }}>•</Typography>
-                    <Typography variant="subtitle1">Tourcoing, France</Typography>
-                  </Box>
-                </Box>
+<Box sx={{ mb: 5 }}>
+  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.projectLeadership')}</Typography>
+  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+    • {t('cv.skills.teamManagement')}<br />
+    • {t('cv.skills.technicalPlanning')}<br />
+    • {t('cv.skills.clientCommunication')}<br />
+    • {t('cv.skills.agileMethodology')}
+  </Typography>
+</Box>
+
+<Box sx={{ mb: 5 }}>
+  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webDevelopment')}</Typography>
+  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+    • React.js, AngularJS<br />
+    • PHP, Symfony, WordPress<br />
+    • REST API, GraphQL<br />
+    • {t('cv.skills.responsiveDesign')}
+  </Typography>
+</Box>
               </Paper>
               </motion.div>
             </Grid>

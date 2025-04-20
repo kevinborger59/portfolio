@@ -54,7 +54,7 @@ const Services = ({ onContactClick }) => {
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   whileHover={{ scale: 1.03 }}
                   style={{ height: '100%' }}
@@ -86,7 +86,7 @@ const Services = ({ onContactClick }) => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
           >
             <Paper 
@@ -94,8 +94,7 @@ const Services = ({ onContactClick }) => {
               id="pricing"
               sx={{ 
                 p: 4, 
-                backgroundColor: 'primary.main',
-                color: 'white',
+                
                 textAlign: 'center'
               }}
             >
@@ -125,16 +124,20 @@ const Services = ({ onContactClick }) => {
               </Typography>
               <Button 
                 variant="contained" 
-                color="secondary"
+                color="primary"
                 size="large"
                 onClick={onContactClick}
                 sx={{ 
                   px: 4,
                   py: 1.5,
                   fontSize: '1.1rem',
+                  backgroundColor: theme.palette.background.default,
+                  color: theme.palette.text.primary,
                   '&:hover': {
                     transform: 'scale(1.05)',
-                  },
+                    backgroundColor: theme.palette.background.button,
+                    color: theme.palette.text.secondary,
+                  }
                 }}
               >
                 {t('services.contact.cta')}
