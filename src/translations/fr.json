@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "subtitle": "Expert en Développement Web & Mobile",
+    "description": "Spécialisé dans la création d'applications web modernes et performantes. Plus de 10 ans d'expérience au service de vos projets digitaux.",
+    "title": "Développeur Freelance",
+    "cta": "Plus d'infos"
+  },
+  "menu": {
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "cancel": "Annuler",
+    "success": "Message envoyé avec succès !",
+    "error": "Une erreur est survenue lors de l'envoi du message.",
+    "projectType": "Type de projet",
+    "types": {
+      "other": "Autre - Pas encore défini",
+      "module": "Extension & Modules",
+      "creation": "Création de Site Web",
+      "maintenance": "Maintenance & Réparation"
+    }
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "experience": "Expérience",
+    "skill": "Compétences",
+    "backEnd": "Développement Back-End",
+    "frontEnd": "Développement Front-End",
+    "infrastructure": "Infrastructure & Outils",
+    "professional": "Compétences Professionnelles",
+    "present": "Aujourd'hui",
+    "hybrid": "Hybride",
+    "onSite": "Sur site",
+    "roles": {
+      "seniorBackEnd": "Développeur Back-End Senior",
+      "webDev": "Développeur Web",
+      "leadArchitect": "Lead Dev - Architecte Web",
+      "leadBackend": "Lead Développeur Back-end",
+      "fullstackLead": "Développeur Fullstack - Lead Dev",
+      "juniorDev": "Développeur Web Junior"
+    },
+    "skills": {
+      "backendDev": "Développement back-end",
+      "restApi": "Développement d'API REST",
+      "projectManagement": "Gestion de projet",
+      "projectPlanning": "Planification de projet",
+      "english": "Langue Anglaise",
+      "techLead": "Leadership Technique"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Solutions sur mesure pour vos projets web",
+    "module": {
+      "title": "Extension & Modules",
+      "description": "Enrichissez votre site existant avec de nouvelles fonctionnalités. Intégration transparente de modules personnalisés adaptés à vos besoins spécifiques."
+    },
+    "creation": {
+      "title": "Création de Site Web",
+      "description": "De la conception à la réalisation, développement complet de votre projet web. Solutions performantes et évolutives basées sur les technologies modernes."
+    },
+    "maintenance": {
+      "title": "Maintenance & Réparation",
+      "description": "Diagnostic et résolution des problèmes techniques. Optimisation des performances et mise à jour de votre site existant."
+    },
+    "contact": {
+      "title": "Tarification Sur Mesure",
+      "description": "Le taux horaire est défini en fonction de la complexité et des spécificités de votre projet.",
+      "cta": "Contactez-moi pour un devis personnalisé",
+      "response": "Réponse garantie sous 24h"
+    },
+    "pricing": {
+      "approach": "La tarification est établie de manière personnalisée pour chaque projet",
+      "details": "Lors de notre première discussion, nous analyserons ensemble vos besoins spécifiques, vos objectifs et vos contraintes",
+      "collaboration": "Cette approche collaborative nous permettra de définir ensemble une solution adaptée et un budget approprié",
+      "adaptation": "Chaque projet étant unique, les modalités de tarification seront ajustées pour répondre au mieux à vos attentes"
+    }
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Expertise et valeurs au service de vos projets",
+    "expertise": {
+      "title": "Expertise Technique",
+      "description": "Plus de 10 ans d'expérience dans le développement web et mobile, avec une maîtrise approfondie des technologies modernes"
+    },
+    "collaboration": {
+      "title": "Approche Collaborative",
+      "description": "Une communication transparente et une collaboration étroite pour garantir la réussite de vos projets"
+    },
+    "innovation": {
+      "title": "Innovation Continue",
+      "description": "Veille technologique constante pour proposer les meilleures solutions adaptées à vos besoins"
+    },
+    "description": "Passionné par le développement web, je m'engage à fournir des solutions sur mesure qui répondent parfaitement à vos objectifs business tout en respectant les meilleurs standards de l'industrie."
+  }
+}

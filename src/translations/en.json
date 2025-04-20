@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "subtitle": "Web & Mobile Development Expert",
+    "description": "Specialized in creating modern and high-performance web applications. Over 10 years of experience serving your digital projects.",
+    "title": "Freelance Developer",
+    "cta": "Learn More"
+  },
+  "menu": {
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "cancel": "Cancel",
+    "success": "Message sent successfully!",
+    "error": "An error occurred while sending the message.",
+    "types": {
+      "other": "Other - Not yet defined",
+      "module": "Extension & Modules",
+      "creation": "Website Creation",
+      "maintenance": "Maintenance & Repair"
+    }
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "experience": "Experience",
+    "skill": "Skills",
+    "backEnd": "Back-End Development",
+    "frontEnd": "Front-End Development",
+    "infrastructure": "Infrastructure & Tools",
+    "professional": "Professional Skills",
+    "present": "Present",
+    "hybrid": "Hybrid",
+    "onSite": "On-site",
+    "roles": {
+      "seniorBackEnd": "Senior Back-End Developer",
+      "webDev": "Web Developer",
+      "leadArchitect": "Lead Dev - Web Architect",
+      "leadBackend": "Lead Back-end Developer",
+      "fullstackLead": "Fullstack Developer - Lead Dev",
+      "juniorDev": "Junior Web Developer"
+    },
+    "skills": {
+      "backendDev": "Back-end development",
+      "restApi": "REST API Development",
+      "projectManagement": "Project Management",
+      "projectPlanning": "Project Planning",
+      "english": "English Language",
+      "techLead": "Technical Leadership"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Custom Solutions for Your Web Projects",
+    "module": {
+      "title": "Extensions & Modules",
+      "description": "Enhance your existing website with new features. Seamless integration of custom modules tailored to your specific needs."
+    },
+    "creation": {
+      "title": "Website Creation",
+      "description": "From design to implementation, complete development of your web project. High-performance and scalable solutions based on modern technologies."
+    },
+    "maintenance": {
+      "title": "Maintenance & Repair",
+      "description": "Technical troubleshooting and problem resolution. Performance optimization and updates for your existing website."
+    },
+    "contact": {
+      "title": "Custom Pricing",
+      "description": "Hourly rate is determined based on the complexity and specifics of your project.",
+      "cta": "Contact me for a personalized quote",
+      "response": "Response guaranteed within 24 hours"
+    },
+    "pricing": {
+      "approach": "Pricing is established on a personalized basis for each project",
+      "details": "During our first discussion, we will analyze together your specific needs, objectives, and constraints",
+      "collaboration": "This collaborative approach will allow us to define together a suitable solution and an appropriate budget",
+      "adaptation": "As each project is unique, pricing terms will be adjusted to best meet your expectations"
+    }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Expertise and values serving your projects",
+    "expertise": {
+      "title": "Technical Expertise",
+      "description": "Over 10 years of experience in web and mobile development, with deep knowledge of modern technologies"
+    },
+    "collaboration": {
+      "title": "Collaborative Approach",
+      "description": "Transparent communication and close collaboration to ensure the success of your projects"
+    },
+    "innovation": {
+      "title": "Continuous Innovation",
+      "description": "Constant technology watch to offer the best solutions adapted to your needs"
+    },
+    "description": "Passionate about web development, I am committed to providing tailored solutions that perfectly meet your business objectives while adhering to industry best practices."
+  }
+}
