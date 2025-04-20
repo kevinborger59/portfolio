@@ -1,15 +1,19 @@
 import React from 'react';
-import { Box, Container, Typography, Paper, Grid, Divider } from '@mui/material';
+import { Box, Container, Typography, Paper, Grid, Divider, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import WorkIcon from '@mui/icons-material/Work';
 import CodeIcon from '@mui/icons-material/Code';
 
 const CV = () => {
+  const theme = useTheme();
   const { t } = useTranslation();
 
   return (
-    <Box id="cv" sx={{ py: 8, backgroundColor: '#f5f5f5' }}>
+    <Box id="cv" sx={{ 
+      py: 8, 
+      backgroundColor: theme.palette.background.section 
+    }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,17 +25,20 @@ const CV = () => {
           </Typography>
           
           <Grid container spacing={4}>
-            {/* Experience Section - Now wider */}
             <Grid item xs={12} md={7}>
-              <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
                   <WorkIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
                   <Typography variant="h4">{t('cv.experience')}</Typography>
                 </Box>
                 <Divider sx={{ mb: 4 }} />
                 
-                {/* Experience items with more spacing and details */}
-                {/* Experience items */}
                 <Box sx={{ mb: 5 }}>
                   <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.roles.seniorBackEnd')}</Typography>
                   <Typography variant="h6" sx={{ mb: 2 }}>Blissim</Typography>
@@ -94,11 +101,17 @@ const CV = () => {
                   </Box>
                 </Box>
               </Paper>
+              </motion.div>
             </Grid>
 
-            {/* Skills Section */}
             <Grid item xs={12} md={5}>
-              <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
                   <CodeIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
                   <Typography variant="h4">{t('cv.skill')}</Typography>
@@ -138,6 +151,7 @@ const CV = () => {
                   <Typography variant="body1" sx={{ mb: 1 }}>• {t('cv.skills.techLead')}</Typography>
                 </Box>
               </Paper>
+              </motion.div>
             </Grid>
           </Grid>
         </motion.div>

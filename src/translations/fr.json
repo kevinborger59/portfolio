@@ -10,10 +10,11 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "pricing": "Tarifs"
   },
   "contact": {
-    "title": "Contactez-moi",
+    "title": "Contactez-moi pour de plus amples informations",
     "name": "Nom",
     "email": "Email",
     "message": "Message",
@@ -21,7 +22,7 @@
     "cancel": "Annuler",
     "success": "Message envoyé avec succès !",
     "error": "Une erreur est survenue lors de l'envoi du message.",
-    "projectType": "Type de projet",
+    "projectType": "Type de question",
     "types": {
       "other": "Autre - Pas encore défini",
       "module": "Extension & Modules",

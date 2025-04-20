@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Paper } from '@mui/material';
+import { Box, Container, Typography, Grid, Paper, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import CodeIcon from '@mui/icons-material/Code';
@@ -7,6 +7,7 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 const About = () => {
+  const theme = useTheme();
   const { t } = useTranslation();
 
   const values = [
@@ -28,7 +29,10 @@ const About = () => {
   ];
 
   return (
-    <Box id="about" sx={{ py: 8, backgroundColor: 'white' }}>
+    <Box id="about" sx={{ 
+      py: 8, 
+      backgroundColor: theme.palette.background.paper 
+    }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,9 +50,10 @@ const About = () => {
             {values.map((value, index) => (
               <Grid item xs={12} md={4} key={index}>
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
                   style={{ height: '100%' }}
                 >
                   <Paper

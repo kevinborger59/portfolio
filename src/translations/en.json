@@ -10,10 +10,11 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "pricing": "Pricing"
   },
   "contact": {
-    "title": "Contact Me",
+    "title": "Contact Me to get more informations",
     "name": "Name",
     "email": "Email",
     "message": "Message",
@@ -21,6 +22,7 @@
     "cancel": "Cancel",
     "success": "Message sent successfully!",
     "error": "An error occurred while sending the message.",
+    "projectType": "Question Type",
     "types": {
       "other": "Other - Not yet defined",
       "module": "Extension & Modules",

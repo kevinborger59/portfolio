@@ -18,8 +18,7 @@ const LanguageSelector = ({ onLanguageChange }) => {
     }
   };
 
-  // Get current flag based on active language
-  const CurrentFlag = i18n.language === 'fr' ? FR : GB;
+  const CurrentFlag = i18n.language === 'en' ? GB : FR;
 
   return (
     <>

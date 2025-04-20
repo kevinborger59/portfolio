@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Dialog, DialogTitle, DialogContent, TextField, DialogActions, Button, Snackbar, Alert, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 const Contact = ({ open, onClose }) => {
   const { t } = useTranslation();
@@ -58,7 +59,13 @@ const Contact = ({ open, onClose }) => {
   return (
     <>
       <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-        <DialogTitle>{t('contact.title')}</DialogTitle>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <DialogTitle>{t('contact.title')}</DialogTitle>
+        </motion.div>
         <form onSubmit={handleSubmit}>
           <DialogContent>
             <FormControl fullWidth margin="normal" required>
