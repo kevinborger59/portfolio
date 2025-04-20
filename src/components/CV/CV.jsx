@@ -3,7 +3,6 @@ import { Box, Container, Typography, Paper, Grid, Divider } from '@mui/material'
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
 import CodeIcon from '@mui/icons-material/Code';
 
 const CV = () => {
