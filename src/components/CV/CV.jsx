@@ -87,7 +87,7 @@ const CV = () => {
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.6 }}
               >
                 <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
