@@ -10,7 +10,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "cv": "CV",
+    "cv": "Skills",
     "pricing": "Pricing"
   },
   "contact": {
@@ -31,9 +31,9 @@
     }
   },
   "cv": {
-    "title": "Curriculum Vitae",
-    "experience": "Experience",
-    "skill": "Skills",
+    "title": "Skills",
+    "experience": "Technical Skills",
+    "skill": "Development Skills",
     "backEnd": "Back-End Development",
     "frontEnd": "Front-End Development",
     "infrastructure": "Infrastructure & Tools",
@@ -99,6 +99,18 @@
       "details": "During our first discussion, we will analyze together your specific needs, objectives, and constraints",
       "collaboration": "This collaborative approach will allow us to define together a suitable solution and an appropriate budget",
       "adaptation": "As each project is unique, pricing terms will be adjusted to best meet your expectations"
+    },
+    "showcase": {
+      "title": "Standard Website Creation",
+      "description": "Design and development of professional and elegant showcase websites to optimally present your business or activity."
+    },
+    "ecommerce": {
+      "title": "E-commerce Website Creation",
+      "description": "Development of high-performance and secure online stores, with product management, payments, and optimized customer experience."
+    },
+    "domain": {
+      "title": "Domain and Hosting Management",
+      "description": "Complete configuration and management of your domain name and web hosting, with technical support and continuous maintenance."
     }
   },
   "about": {
@@ -117,5 +129,10 @@
       "description": "Constant technology watch to offer the best solutions adapted to your needs"
     },
     "description": "Passionate about web development, I am committed to providing tailored solutions that perfectly meet your business objectives while adhering to industry best practices."
+  },
+  "articles": {
+    "title": "Interesting Articles",
+    "loading": "Loading articles...",
+    "read": "Read Article"
   }
 }

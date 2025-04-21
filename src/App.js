@@ -11,6 +11,7 @@ import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import { lightTheme, darkTheme } from './themes/theme';
+import ExternalArticles from './components/ExternalArticles/ExternalArticles';
 
 
 function App() {
@@ -47,8 +48,9 @@ function App() {
       >
         <Hero />
         <About />
-        <CV />
         <Services onContactClick={() => setContactOpen(true)} />
+        <CV />
+        <ExternalArticles />
         <Contact open={contactOpen} onClose={() => setContactOpen(false)} />
       </motion.div>
     </ThemeProvider>

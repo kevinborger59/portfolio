@@ -10,7 +10,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "cv": "CV",
+    "cv": "Compétences",
     "pricing": "Tarifs"
   },
   "contact": {
@@ -31,9 +31,9 @@
     }
   },
   "cv": {
-    "title": "Curriculum Vitae",
-    "experience": "Expérience",
-    "skill": "Compétences",
+    "title": "Compétences",
+    "experience": "Compétence techniques",
+    "skill": "Compétences développement",
     "backEnd": "Développement Back-End",
     "frontEnd": "Développement Front-End",
     "infrastructure": "Infrastructure & Outils",
@@ -99,6 +99,18 @@
       "details": "Lors de notre première discussion, nous analyserons ensemble vos besoins spécifiques, vos objectifs et vos contraintes",
       "collaboration": "Cette approche collaborative nous permettra de définir ensemble une solution adaptée et un budget approprié",
       "adaptation": "Chaque projet étant unique, les modalités de tarification seront ajustées pour répondre au mieux à vos attentes"
+    },
+    "showcase": {
+      "title": "Création de Site Vitrine",
+      "description": "Conception et développement de sites vitrines professionnels et élégants pour présenter votre entreprise ou votre activité de manière optimale."
+    },
+    "ecommerce": {
+      "title": "Création de Site E-commerce",
+      "description": "Développement de boutiques en ligne performantes et sécurisées, avec gestion des produits, paiements et expérience client optimisée."
+    },
+    "domain": {
+      "title": "Gestion de Domaine et Hébergement",
+      "description": "Configuration et gestion complète de votre nom de domaine et de votre hébergement web, avec support technique et maintenance continue."
     }
   },
   "about": {
@@ -117,5 +129,10 @@
       "description": "Veille technologique constante pour proposer les meilleures solutions adaptées à vos besoins"
     },
     "description": "Passionné par le développement web, je m'engage à fournir des solutions sur mesure qui répondent parfaitement à vos objectifs business tout en respectant les meilleurs standards de l'industrie."
+  },
+  "articles": {
+    "title": "Articles Intéressants",
+    "loading": "Chargement des articles...",
+    "read": "Lire l'article"
   }
 }

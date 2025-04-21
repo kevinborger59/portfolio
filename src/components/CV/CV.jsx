@@ -11,7 +11,8 @@ const CV = () => {
 
   return (
     <Box id="cv" sx={{ 
-      py: 8, 
+      py: 8,
+      pt: 0,
       backgroundColor: theme.palette.background.section 
     }}>
       <Container>
@@ -19,78 +20,78 @@ const CV = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          style={{ display: 'flex', minHeight: '100%' }}
         >
-          <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
-            {t('cv.title')}
-          </Typography>
-          
-          <Grid container spacing={4}>
-            <Grid item xs={12} md={7}>
+          <Grid container spacing={4} sx={{ display: 'flex' }}>
+            <Grid item xs={12} md={7} sx={{ display: 'flex' }}>
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6 }}
+                style={{ width: '100%' }}
               >
-                <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-  <WorkIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
-  <Typography variant="h4">{t('cv.experience')}</Typography>
-</Box>
-<Divider sx={{ mb: 4 }} />
+                <Paper elevation={3} sx={{ p: 4, height: '100%', display: 'flex', flexDirection: 'column' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                        <WorkIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
+                        <Typography variant="h4">{t('cv.experience')}</Typography>
+                    </Box>
+                    
+                    <Divider sx={{ mb: 4 }} />
 
-<Box sx={{ mb: 5 }}>
-  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webProjectManagement')}</Typography>
-  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
-    • {t('cv.skills.corporateWebsite')}<br />
-    • {t('cv.skills.ecommerce')}<br />
-    • {t('cv.skills.mobileApps')}<br />
-    • {t('cv.skills.restApi')}<br />
-    • WordPress, Symfony, PHP
-  </Typography>
-</Box>
+                    <Box sx={{ mb: 5 }}>
+                        <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webProjectManagement')}</Typography>
+                        <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+                            • {t('cv.skills.corporateWebsite')}<br />
+                            • {t('cv.skills.ecommerce')}<br />
+                            • {t('cv.skills.mobileApps')}<br />
+                            • {t('cv.skills.restApi')}<br />
+                            • WordPress, Symfony, PHP
+                        </Typography>
+                    </Box>
 
-<Box sx={{ mb: 5 }}>
-  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.technicalArchitecture')}</Typography>
-  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
-    • {t('cv.skills.backendArchitecture')}<br />
-    • Elasticsearch, RabbitMQ<br />
-    • {t('cv.skills.apiDesign')}<br />
-    • {t('cv.skills.databaseOptimization')}
-  </Typography>
-</Box>
+                    <Box sx={{ mb: 5 }}>
+                        <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.technicalArchitecture')}</Typography>
+                        <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+                            • {t('cv.skills.backendArchitecture')}<br />
+                            • Elasticsearch, RabbitMQ<br />
+                            • {t('cv.skills.apiDesign')}<br />
+                            • {t('cv.skills.databaseOptimization')}
+                        </Typography>
+                    </Box>
 
-<Box sx={{ mb: 5 }}>
-  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.projectLeadership')}</Typography>
-  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
-    • {t('cv.skills.teamManagement')}<br />
-    • {t('cv.skills.technicalPlanning')}<br />
-    • {t('cv.skills.clientCommunication')}<br />
-    • {t('cv.skills.agileMethodology')}
-  </Typography>
-</Box>
+                    <Box sx={{ mb: 5 }}>
+                        <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.projectLeadership')}</Typography>
+                        <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+                            • {t('cv.skills.teamManagement')}<br />
+                            • {t('cv.skills.technicalPlanning')}<br />
+                            • {t('cv.skills.clientCommunication')}<br />
+                            • {t('cv.skills.agileMethodology')}
+                        </Typography>
+                    </Box>
 
-<Box sx={{ mb: 5 }}>
-  <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webDevelopment')}</Typography>
-  <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
-    • React.js, AngularJS<br />
-    • PHP, Symfony, WordPress<br />
-    • REST API, GraphQL<br />
-    • {t('cv.skills.responsiveDesign')}
-  </Typography>
-</Box>
+                    <Box sx={{ mb: 5 }}>
+                    <Typography variant="h5" sx={{ color: 'primary.main', mb: 1 }}>{t('cv.skills.webDevelopment')}</Typography>
+                    <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>
+                        • React.js, AngularJS<br />
+                        • PHP, Symfony, WordPress<br />
+                        • REST API, GraphQL<br />
+                        • {t('cv.skills.responsiveDesign')}
+                    </Typography>
+                    </Box>
               </Paper>
               </motion.div>
             </Grid>
 
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} sx={{ display: 'flex' }}>
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6 }}
+                style={{ width: '100%' }}
               >
-                <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
+                <Paper elevation={3} sx={{ p: 4, height: '100%', display: 'flex', flexDirection: 'column' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
                   <CodeIcon sx={{ mr: 2, color: 'primary.main', fontSize: 30 }} />
                   <Typography variant="h4">{t('cv.skill')}</Typography>

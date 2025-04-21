@@ -6,12 +6,30 @@ import ExtensionIcon from '@mui/icons-material/Extension';
 import WebIcon from '@mui/icons-material/Web';
 import BuildIcon from '@mui/icons-material/Build';
 import TimerIcon from '@mui/icons-material/Timer';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import DomainIcon from '@mui/icons-material/Domain';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const Services = ({ onContactClick }) => {
   const theme = useTheme();
   const { t } = useTranslation();
 
   const serviceCards = [
+    {
+      icon: <LanguageIcon sx={{ fontSize: 40 }} />,
+      title: t('services.showcase.title'),
+      description: t('services.showcase.description'),
+    },
+    {
+      icon: <StorefrontIcon sx={{ fontSize: 40 }} />,
+      title: t('services.ecommerce.title'),
+      description: t('services.ecommerce.description'),
+    },
+    {
+      icon: <DomainIcon sx={{ fontSize: 40 }} />,
+      title: t('services.domain.title'),
+      description: t('services.domain.description'),
+    },
     {
       icon: <ExtensionIcon sx={{ fontSize: 40 }} />,
       title: t('services.module.title'),
